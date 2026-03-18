@@ -35,7 +35,7 @@ public class Main {
         int hours = totalMinutes / 60;
         int minutes = totalMinutes % 60;
 
-        System.out.println("Это равно: " + hours + " часов " + minutes + " минут");
+        System.out.println("Это равно: " + hours + " часа3" + minutes + " минут");
 
         scanner.close();
     }
