@@ -8,3 +8,5 @@ public class WeatherReport {
         System.out.println(" сегодня на улиуце " + weather + " температура "+ temperature + " градусов.");
 }
 }
+
+
