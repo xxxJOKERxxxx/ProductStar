@@ -21,7 +21,7 @@ public class DynamicArray {
         remove(3);
         print();
     }
-
+// что внутри массива
     static void print() {
         System.out.println("[");
         for (int i = 0; i < data.length; i++) {
@@ -29,7 +29,7 @@ public class DynamicArray {
         }
         System.out.println("]");
     }
-
+//получение данных из масива
     static void add(int value) {
         if (size >= max_size) {
            int[] temp = Arrays.copyOf(data, size);
@@ -42,32 +42,40 @@ public class DynamicArray {
         data[size] = value;
         size++;
     }
-
+// проверка что массив не пуст
     static boolean isEmpty() {
         return size == 0;
     }
-
+    //а если такой элемент в динамическом массиве?
     static boolean contains(int value) {
-        return false;
+        return indexof(value) >=0;
     }
-
+    //какова позиция элемента внутри динамического массива
     static int indexof(int value) {
-        return 0;
+        for (int i = 0; i < size; i++) {
+            if (data[i] == value) {
+                return i;
+            }
+        }
+        return -1;
     }
-
+// получение данных из массива
     static int get(int index) {
-        return 0;
+        if(index < 0 || index >= size) {
+            throw new RuntimeException("Index out of bounds!");
+        }
+        return data[index];
     }
-
+//удаление данных из массива
     static void remove(int index) {
         if(index < 0 || index >= size) {
     throw new RuntimeException("Index out of bounds!");
         }
         int[] temp = Arrays.copyOf(data,size);
-        for (int i = index; i < data.length -1; i++) {
+        for (int i = index; i < temp.length -1; i++) {
             data[i] = temp[i+1];
         }
-        data[data.length-1] = 0;
+        data[temp.length-1] = 0;
 
     }
 
