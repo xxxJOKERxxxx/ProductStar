@@ -23,7 +23,7 @@ public class DynamicArray {
     }
 // что внутри массива
     static void print() {
-        System.out.println("[");
+        System.out.print("[");
         for (int i = 0; i < data.length; i++) {
             System.out.print(" " + data[i]);
         }
