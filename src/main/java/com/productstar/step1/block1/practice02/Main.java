@@ -9,6 +9,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.println(" Введите час (0-23): ");
         int hour = sc.nextInt();
+        // Проверка корректности ввода
         if (hour < 0 || hour > 23) {
             System.out.println("Ошибка: час должен быть в диапазоне от 0 до 23!");
         }
@@ -21,10 +22,10 @@ public class Main {
                 System.out.println("Это день!");
 
             } else if (hour>=18 && hour <= 21) {
-            System.out.println("это вечер");
+            System.out.println("это вечер!");
 
         } else if (hour>=22 && hour <= 5) {
-            System.out.println("это ночь");
+            System.out.println("это ночь!");
         }
             sc.close();
     }
