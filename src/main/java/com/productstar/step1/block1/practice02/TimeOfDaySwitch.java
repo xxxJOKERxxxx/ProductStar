@@ -24,7 +24,7 @@ public class TimeOfDaySwitch {
                 case 18: case 19: case 20: case 21:
                     System.out.println("Сейчас вечер.");
                     break;
-                default:
+                case 22: case 23: case 24: case 1: case 2: case 3: case 4: case 5:
                     System.out.println("Сейчас ночь.");
                     break;
             }
