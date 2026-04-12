@@ -78,5 +78,12 @@ public class DynamicArray {
         data[temp.length-1] = 0;
 
     }
+    static void clear() {
+        // Создаём новый пустой массив такого же размера (или начального)
+        data = new int[max_size];  // заменяем старый массив новым
+
+        // Сбрасываем счётчик элементов
+        size = 0;
+    }
 
 }
