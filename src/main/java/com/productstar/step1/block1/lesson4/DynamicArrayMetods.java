@@ -21,12 +21,12 @@ public class DynamicArrayMetods {
                 }
                 array = newArray;
             }
-            array[size] = element; // Ошибка: пропущено увеличение размера
+            array[size] = element;
             size++;
         }
 
         public int get ( int index){
-            // Ошибка: нет проверки выхода за границы массива
+
             if (index < 0 || index >= size) {
                 throw new IndexOutOfBoundsException("индекс выходит за границы массива");
             }
@@ -34,7 +34,7 @@ public class DynamicArrayMetods {
         }
 
         public void remove ( int index){
-            // Ошибка: удаление элемента не сдвигает оставшиеся элементы
+
             if (index < 0 || index >= size) {
                 throw new IndexOutOfBoundsException("индекс выходит за границы массива");
             }
@@ -42,7 +42,7 @@ public class DynamicArrayMetods {
                 array[i] = array[i + 1];
             }
             array[size - 1] = 0;
-            size--; // Ошибка: размер уменьшается некорректно
+            size--;
         }
 
         public int size () {

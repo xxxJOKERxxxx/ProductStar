@@ -85,5 +85,21 @@ public class DynamicArray {
         // Сбрасываем счётчик элементов
         size = 0;
     }
+    static void set(int index, int value) {
+        // проверка индекса
+        // присвоение нового значения
+        if(index < 0 || index >= size) {
+            throw new RuntimeException("Index out of bounds!");
+        }else if (value < 0 || value >= size) {
+            throw new RuntimeException("Value out of bounds!");
+        }else if (index == size) {
+            data[index] = value;
+            int[] temp = Arrays.copyOf(data, size);
+            for (int i = size - 1; i >= 0; i--) {
+                data[i] = data[i+1];
+
+            }
+        }
+    }
 
 }
