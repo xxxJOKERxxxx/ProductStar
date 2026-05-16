@@ -1,6 +1,6 @@
 package com.productstar.step1.block1.ClassesAndObjects;
 
-public class Animal {
+public abstract class Animal {
     int age;
     String color;
     boolean gender;
@@ -9,7 +9,5 @@ public class Animal {
         System.out.println("JUMP!!!");
     }
 
-    public void makeSound() {
-        System.out.println("I'm an animal");
-    }
+    public abstract void makeSound();
 }
