@@ -7,6 +7,11 @@ public class Main {
         System.out.println("Sharik is " + Sharik.age + " years");
         Sharik.bark();
 
+        Cat Murka = new Cat();
+        Murka.age = 3;
+        System.out.println("Murka is " + Murka.age + " years");
+        Murka.mew();
+
 
 
     }
