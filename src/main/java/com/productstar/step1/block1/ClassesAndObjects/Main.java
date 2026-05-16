@@ -14,6 +14,9 @@ public class Main {
         Murka.makeSound();
         Murka.jump();
 
+        Hamster hamster = new Hamster();
+        hamster.makeSound();
+
 
 
     }
