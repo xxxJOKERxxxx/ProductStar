@@ -8,4 +8,8 @@ public class Animal {
     public void jump() {
         System.out.println("JUMP!!!");
     }
+
+    public void makeSound() {
+        System.out.println("I'm an animal");
+    }
 }
