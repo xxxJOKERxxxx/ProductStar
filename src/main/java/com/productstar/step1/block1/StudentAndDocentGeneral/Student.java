@@ -1,13 +1,13 @@
 package com.productstar.step1.block1.StudentAndDocentGeneral;
 
-public class Student extends Person {
-    String group;
-    double averageScore;
+class Student extends Person {
+    String group;   // 🔹 своё поле: группа
+    double gpa;     // 🔹 своё поле: средний балл
 
-    Student(String name, int age, String group, double averageScore) {
-        super(name, age);
-        this.group = group;
-        this.averageScore = averageScore;
+    Student(String name, int age, String group, double gpa) {
+        super(name, age);  // сначала заполняем общие поля (из Person)
+        this.group = group;  // потом — свои поля
+        this.gpa = gpa;
     }
 
     @Override

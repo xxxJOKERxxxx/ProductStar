@@ -1,14 +1,13 @@
 package com.productstar.step1.block1.StudentAndDocentGeneral;
 
-public class Docent extends Person {
+class Docent extends Person {
+    String department;
+    int experience;
 
-    String departament;
-    int expriance;
-
-    public Docent(String name, int age, String departament, int expriance) {
+    Docent(String name, int age, String department, int experience) {
         super(name, age);
-        this.departament = departament;
-        this.expriance = expriance;
+        this.department = department;
+        this.experience = experience;
     }
 
     @Override
