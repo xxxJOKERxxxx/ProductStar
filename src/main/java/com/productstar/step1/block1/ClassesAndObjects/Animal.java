@@ -14,8 +14,11 @@ public abstract class Animal {
     public abstract void makeSound();
 
     public Animal() {
+    }
+
+    public Animal(int lives) {
         System.out.println("Animal constructor called ");
-        this.lives = 1;
+        this.lives = lives;
         System.out.println("Animal has " + this.lives + " lives");
     }
 
