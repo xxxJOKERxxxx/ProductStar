@@ -2,15 +2,15 @@ package com.productstar.step1.block1.ClassesAndObjects;
 
 public class Cat extends Animal{
 
-    private int lives;
-
     public Cat() {
+        super();
+        System.out.println("Cat constructor called ");
         this.lives = 9;
+        System.out.println("Animal has " + this.lives + " lives");
     }
 
-    public Cat(int lives) {
-        this.lives = lives;
-    }
+
+
 
     public void mew() {
         System.out.println("Mewwww!!!");
@@ -20,11 +20,5 @@ public class Cat extends Animal{
         System.out.println("Meeewwww!!!!");
     }
 
-    public int getLives() {
-        return lives;
-    }
 
-    public void setLives(int lives) {
-        this.lives = lives;
-    }
 }

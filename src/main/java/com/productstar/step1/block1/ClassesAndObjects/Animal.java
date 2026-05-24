@@ -5,12 +5,19 @@ public abstract class Animal {
     String color;
     boolean gender;
     private String name;
+    protected int lives;
 
     public void jump() {
         System.out.println("JUMP!!!");
     }
 
     public abstract void makeSound();
+
+    public Animal() {
+        System.out.println("Animal constructor called ");
+        this.lives = 1;
+        System.out.println("Animal has " + this.lives + " lives");
+    }
 
     public int getAge() {
         return age;
@@ -32,5 +39,13 @@ public abstract class Animal {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getLives() {
+        return lives;
+    }
+
+    public void setLives(int lives) {
+        this.lives = lives;
     }
 }
