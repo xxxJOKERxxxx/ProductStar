@@ -5,6 +5,8 @@ public class Main {
         Dog Sharik = new Dog();
         Cat Murka = new Cat();
         Hamster hamster = new Hamster();
+        Dog seymour = new Dog();
+        System.out.println("Name is: " + seymour.getName());
 
         pet(Sharik);
         pet(Murka);
