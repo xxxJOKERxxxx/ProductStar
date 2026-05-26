@@ -2,7 +2,7 @@ package com.productstar.step1.block1.ClassesAndObjects;
 
 import java.sql.SQLOutput;
 
-public class Dog extends Animal{
+public class Dog extends Animal implements Walkable {
 
     public Dog(String say) {
         System.out.println(say);
@@ -16,4 +16,8 @@ public class Dog extends Animal{
         System.out.println("BBBAAARKKK!!!!");
     }
 
+    @Override
+    public void walk() {
+        System.out.println("Walk the Dog!");
+    }
 }
