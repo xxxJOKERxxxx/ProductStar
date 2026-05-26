@@ -2,7 +2,7 @@ package com.productstar.step1.block1.ClassesAndObjects;
 
 public abstract class Animal {
     private int age;
-    String color;
+    Color color;
     boolean gender;
     private String name;
     protected int lives;
