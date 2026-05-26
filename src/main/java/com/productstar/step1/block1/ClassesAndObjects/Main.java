@@ -12,7 +12,6 @@ public class Main {
         takeMyToThePark(dog);
         fight((Fightable) cat);
     }
-
     public static void takeMyToThePark(Walkable walkable) {
         walkable.walk();
     }
