@@ -32,6 +32,10 @@ public class Rectangle {
         return this.b;
     }
 
+    public double getArea() {
+        return a * b;
+    }
+
     public String toString() {
         return "Rectangle(" + a + ", " + b + ")";
     }
