@@ -2,10 +2,9 @@ package com.productstar.step1.block1.WorkShop;
 
 public class Main {
     public static void main(String[] args) {
-        Rectangle rectangle = new Rectangle(1, 2);
 
-        System.out.println(rectangle);
+        Box box = new Box(1,2,3);
 
-        System.out.println(rectangle.getArea());
+        System.out.println(box.getVolume());
     }
 }
