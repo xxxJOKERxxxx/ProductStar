@@ -1,9 +1,9 @@
 package com.productstar.step1.block1.WorkShop;
 
 public class Rectangle {
-    protected double a;
+     double a;
 
-    protected double b;
+     double b;
 
     public Rectangle(double a, double b) {
         this.a = a;
