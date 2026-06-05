@@ -7,24 +7,8 @@ public class ExceptionsMain {
 
     public static String name;
 
-    public static void main(String[] args) {
-
-        try {
-            doSomethingDangerous();
-        } catch (FileNotFoundException | SocketException e) {
-            e.printStackTrace();
-        }
+    public static void main(String[] args) throws AccessDeniedException {
+        throw new AccessDeniedException("Пользователь A1 не имеет доступа к аккаунту 123");
     }
 
-    public static void doSomethingDangerous() throws FileNotFoundException, SocketException
-    {
-        readfile("");
-    }
-
-    public static void readfile(String path) throws FileNotFoundException, SocketException {
-        if (path == null) {
-            throw new FileNotFoundException();
-        }
-        throw new SocketException();
-    }
 }
