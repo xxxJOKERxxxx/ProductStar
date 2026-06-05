@@ -11,4 +11,5 @@ public class ExceptionsMain {
         throw new AccessDeniedException("Пользователь A1 не имеет доступа к аккаунту 123");
     }
 
+
 }
