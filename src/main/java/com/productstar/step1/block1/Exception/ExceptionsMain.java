@@ -11,12 +11,13 @@ public class ExceptionsMain {
 
         try {
             doSomethingDangerous();
-        } catch (Exception e) {
+        } catch (FileNotFoundException | SocketException e) {
             e.printStackTrace();
         }
     }
 
-    public static void doSomethingDangerous() throws Exception {
+    public static void doSomethingDangerous() throws FileNotFoundException, SocketException
+    {
         readfile("");
     }
 
