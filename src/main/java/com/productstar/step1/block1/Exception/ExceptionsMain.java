@@ -16,7 +16,7 @@ public class ExceptionsMain {
         }
     }
 
-    public static void doSomethingDangerous() throws FileNotFoundException, SocketException {
+    public static void doSomethingDangerous() throws Exception {
         readfile("");
     }
 
