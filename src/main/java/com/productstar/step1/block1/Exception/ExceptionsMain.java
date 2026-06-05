@@ -7,12 +7,18 @@ public class ExceptionsMain {
     public static String name;
 
     public static void main(String[] args) {
+
         try {
-            readfile(null);
-        } catch (FileNotFoundException error) {
-            error.printStackTrace();
+            doSomethingDangerous();
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
         }
     }
+
+    public static void doSomethingDangerous() throws FileNotFoundException{
+        readfile("");
+    }
+
     public static void readfile(String path) throws FileNotFoundException {
         if (path == null) {
             throw new FileNotFoundException();
