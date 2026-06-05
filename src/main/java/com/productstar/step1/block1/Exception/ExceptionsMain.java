@@ -11,9 +11,7 @@ public class ExceptionsMain {
 
         try {
             doSomethingDangerous();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (SocketException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
