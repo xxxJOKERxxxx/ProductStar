@@ -9,7 +9,6 @@ public class ExceptionsMain {
         } catch (ArithmeticException e) {
             System.out.println("You can not divide by zero! Sin!");
         }
-
     }
 
     public static int divideByZero() {
