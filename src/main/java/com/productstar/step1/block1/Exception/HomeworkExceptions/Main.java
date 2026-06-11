@@ -33,7 +33,6 @@ public class Main {
     }
 
     // Главный метод - точка входа в программу. Вызывается JVM при запуске.
-    // public static void main(String[] args) - стандартная сигнатура.
     public static void main(String[] args) {
 
         // Выводим начальный баланс
