@@ -35,6 +35,40 @@ public class Array {
             System.out.print(reversed[i] + " ");
         }
         ;
+        System.out.println();
+
+        int[][] table = new int[3][3];
+        System.out.println("Двумерный массив: ");
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                table[i][j] = i * j;
+                System.out.print(table[i][j] + " ");
+            }
+            System.out.println();
+        }
+        int[] data = new int[4];
+        data[0] = 5;
+        data[data.length - 1] = 8;
+        System.out.println("число из первой ячейки: " + data[0]);
+
+        int[][] board = new int[2][3];
+        board[0][0] = 10;
+        board[1][2] = 20;
+        System.out.println(" оба числа двумерного массива: " + "\n" + board[0][0] + " " + board[1][2]);
+
+        int[][] table1 = new int[3][3];
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                table1[i][j] = j;
+            }
+        }
+        System.out.println("Массив из номеров столбца:");
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print(table1[i][j] + " ");
+            }
+            System.out.println();
+        }
 
     }
 }
