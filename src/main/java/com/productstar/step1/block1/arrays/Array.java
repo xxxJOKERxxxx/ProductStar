@@ -17,6 +17,24 @@ public class Array {
         }
         System.out.println("Максимальное значение элемента в массиве равно: " + max);
 
+        int[] arr = {1, 2, 3, 4, 5};
+        System.out.print("Исходный массив: ");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+
+        int[] reversed = new int[arr.length];
+
+        System.out.print("Перевернутый иассив: ");
+
+        for (int i = 0; i < arr.length; i++) {
+
+            reversed[i] = arr[arr.length - 1 - i];
+
+            System.out.print(reversed[i] + " ");
+        }
+        ;
 
     }
 }
