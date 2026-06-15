@@ -70,5 +70,35 @@ public class Array {
             System.out.println();
         }
 
+        int[] ages = {15, 20, 25, 30};
+        System.out.println("каждый элемент с новой строки: ");
+        for (int i = 0; i < ages.length; i++) {
+            System.out.println(ages[i] + " ");
+        }
+
+        System.out.println("Одномерный массив: ");
+        int[] scores = {10,20,30,40};
+        System.out.println("каждый элемент в 2 раза больше: ");
+        int[] doubleScores = new int[scores.length];
+        for (int i = 0; i < scores.length; i++) {
+                doubleScores[i] = scores[i] * 2;
+        }
+        for (int i = 0; i < doubleScores.length; i++) {
+            System.out.print(doubleScores[i] + " ");
+        }
+
+
+        System.out.println("Двумерный массив: ");
+        int[][] twoDArray = {
+                {1, 2},
+                {3, 4}
+        };
+        for (int i = 0; i < twoDArray.length; i++) {
+            for (int j = 0; j < twoDArray[i].length; j++) {
+                System.out.print(twoDArray[i][j] + " ");
+            }
+            System.out.println();
+        }
+
     }
 }
