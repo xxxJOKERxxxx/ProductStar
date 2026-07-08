@@ -4,15 +4,19 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Введите число: ");
-        Scanner scanner = new Scanner(System.in);
-        int sc = scanner.nextInt();
-        if (sc % 2 == 0){
-            System.out.println("чётное");
-        } else {
-            System.out.println("не чётное");
-        }
 
+        int sum = 0;
+
+        System.out.println("Введите рандомно 5 чисел: ");
+
+        Scanner scanner = new Scanner(System.in);
+
+        for (int i = 0; i < 5; i++) {
+            int sc = scanner.nextInt();
+            sum += sc;
+        }
+        scanner.close();
+        System.out.println("Cумма ваших 5 чисел равна: " + sum);
     }
 
 
