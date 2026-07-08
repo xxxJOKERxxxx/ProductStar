@@ -6,18 +6,21 @@ public class Main {
     public static void main(String[] args) {
 
         int count = 0;
-        System.out.println("Введите коды палет (0 - СТОП): ");
+        int sum = 0;
+
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Считывайте вес каждой паллеты: ");
         while (true) {
-            int code = scanner.nextInt();
-            if (code==0) {
+            int weight = scanner.nextInt();
+            if (weight == 0) {
                 break;
-            }count++;
+            }
+            count++;
 
+            sum+=weight;
         }
-
-        System.out.println("Всего палет выгружено: " + count);
+        double avg = (double) sum / count;
+        System.out.println("Средний вес палет равен: " + avg);
     }
-
 
 }
