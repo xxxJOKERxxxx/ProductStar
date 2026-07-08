@@ -5,18 +5,18 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        int sum = 0;
-
-        System.out.println("Введите рандомно 5 чисел: ");
-
+        int count = 0;
+        System.out.println("Введите коды палет (0 - СТОП): ");
         Scanner scanner = new Scanner(System.in);
+        while (true) {
+            int code = scanner.nextInt();
+            if (code==0) {
+                break;
+            }count++;
 
-        for (int i = 0; i < 5; i++) {
-            int sc = scanner.nextInt();
-            sum += sc;
         }
-        scanner.close();
-        System.out.println("Cумма ваших 5 чисел равна: " + sum);
+
+        System.out.println("Всего палет выгружено: " + count);
     }
 
 
