@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
 
         int count = 0;
-        int sum = 0;
+        int heavyCount = 0;
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Считывайте вес каждой паллеты: ");
@@ -14,13 +14,13 @@ public class Main {
             int weight = scanner.nextInt();
             if (weight == 0) {
                 break;
+            } else if(weight > 50) {
+                heavyCount++;
             }
-            count++;
 
-            sum+=weight;
         }
-        double avg = (double) sum / count;
-        System.out.println("Средний вес палет равен: " + avg);
+
+        System.out.println("Палет тяжелее 50кг: " + heavyCount);
     }
 
 }
