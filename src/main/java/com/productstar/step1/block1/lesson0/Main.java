@@ -5,21 +5,18 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        int minWeight = Integer.MAX_VALUE;
+        int count = 0;
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Введите вес палеты: ");
 
-        while (true) {
-
+        while (true){
             int weight = scanner.nextInt();
-            if (weight == 0)
+            if (weight > 100)
                 break;
-            if (weight < minWeight) {
-               minWeight = weight;
-            }
+            count++;
         }
-        System.out.println("минимальный вес палеты: " + minWeight);
+        System.out.println("Палет до перегруза более 100кг: " + count);
 
 
     }
