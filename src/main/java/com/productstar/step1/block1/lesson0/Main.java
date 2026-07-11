@@ -5,22 +5,22 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        int count = 0;
-        int maxWeight = 0;
-
+        int minWeight = Integer.MAX_VALUE;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Считывайте вес каждой паллеты: ");
+
+        System.out.println("Введите вес палеты: ");
+
         while (true) {
+
             int weight = scanner.nextInt();
-            if (weight == 0) {
+            if (weight == 0)
                 break;
-            } else if(weight > maxWeight) {
-                maxWeight = weight;
+            if (weight < minWeight) {
+               minWeight = weight;
             }
-
         }
+        System.out.println("минимальный вес палеты: " + minWeight);
 
-        System.out.println("вес самой тяжёлой палеты: " + maxWeight);
+
     }
-
 }
