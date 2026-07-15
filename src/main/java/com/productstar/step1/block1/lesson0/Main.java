@@ -7,27 +7,20 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Введите вес палеты: ");
-        while (true) {
+        System.out.println("ночная ли смена? : ");
 
-            int weight = scanner.nextInt();
+        boolean isNight = scanner.nextBoolean();  // ждёт ввод true или false
 
-            if (weight <= 0) {
-                System.out.println("ОШИБКА ВВОДА!");
-                break;
-            } else if (weight < 10) {
-                System.out.println("Зона А: мелкий товар");
-            } else if (weight <= 30) {
-                System.out.println("Зона В: стандарт");
-            }  else if ( weight <= 50) {
-                System.out.println("Зона С:тяжелый");
-            }else if (weight <= 100) {
-                System.out.println("Зона D:крупногабарит");
-            }else
-                System.out.println("Перегруз! Не принимаем!");
-            break;
+        System.out.println("введите кол-во отработанных часов: ");
 
-        }
+        int hours = scanner.nextInt();
+
+        int rate = isNight ? 1050 : 700;
+
+        int salary = hours * rate;
+
+        System.out.println("Зарплата: " + salary);
+
 
     }
 }
