@@ -10,16 +10,38 @@ public class ReverseOrder {
 
         int[] weight = new int[5];
 
+        double sum = 0;
+
+        double averageWeight = 0;
+
+        int count = 0;
+
         for (int i = 0; i < 5; i++) {
 
             System.out.println("Введите вес " + (i + 1) + " -й палеты: ");
 
             weight[i] = scanner.nextInt();
+            sum += weight[i];
+
         }
+        System.out.println("Сумма 5 палет: " + sum + " кг");
+
         System.out.println();
-        System.out.print("В обратном порядке: ");
-        for (int i = 4; i >=0; i--) {
-            System.out.print(weight[i] + " ");
+
+        averageWeight = (double) sum / 5;
+
+        System.out.print("Средний вес равен: " + averageWeight + " кг");
+        System.out.println();
+
+        for (int i = 0; i < 5; i++) {
+            if (weight[i] > averageWeight) {
+                count++;
+
+                System.out.println("Тяжелее среднего веса: палета № " + (i + 1) + " " + "(" +  (weight[i])+ " кг)");
+            }
+
         }
+        System.out.println("Всего выше среднего: " + count + " палеты");
+
     }
 }
