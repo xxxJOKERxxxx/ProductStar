@@ -6,21 +6,21 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите вес палеты: ");
+        int weight = scanner.nextInt();
+        System.out.println("Ночная ли смена?: ");
+        boolean isNight = scanner.nextBoolean();
 
-        System.out.println("ночная ли смена? : ");
-
-        boolean isNight = scanner.nextBoolean();  // ждёт ввод true или false
-
-        System.out.println("введите кол-во отработанных часов: ");
-
-        int hours = scanner.nextInt();
-
-        int rate = isNight ? 1050 : 700;
-
-        int salary = hours * rate;
-
-
-        System.out.println("Зарплата: " + salary);
+        double baseCost = 0;
+        if (weight<50) {
+              baseCost = 100;
+        } else if (weight<100) {
+            baseCost = 200;
+        }else  if (weight>100) {
+            baseCost = 500;
+        }
+        double cost = baseCost * (isNight? 0.8 : 1.0);
+        System.out.println(" Стоимость: " + cost);
 
 
     }
