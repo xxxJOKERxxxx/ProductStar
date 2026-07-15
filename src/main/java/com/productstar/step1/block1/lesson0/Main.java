@@ -19,6 +19,7 @@ public class Main {
 
         int salary = hours * rate;
 
+
         System.out.println("Зарплата: " + salary);
 
 
