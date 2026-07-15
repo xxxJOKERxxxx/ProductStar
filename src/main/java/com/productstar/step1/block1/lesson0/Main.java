@@ -7,37 +7,17 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Введите вес палеты: ");
-
-        int weight = scanner.nextInt();
-
-        double baseCost;
-
-        if (weight <= 0) {
-            System.out.println("Ошибка: вес должен быть положительным!");
-            return;
-        } else if (weight > 500) {
-            System.out.println("Ошибка: слишком тяжёлая палета, максимум 500кг");
-            return;
+        int[] weight = new int[5];
+        int total = 0;
+        double average;
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Введите вес " + (i + 1) + " - й палеты: ");
+            weight[i] = scanner.nextInt();
+            total += weight[i];
         }
-
-
-        System.out.println("Ночная ли смена?: ");
-        boolean isNight = scanner.nextBoolean();
-
-
-
-            if (weight < 50) {
-                baseCost = 100;
-            } else if (weight < 100) {
-                baseCost = 200;
-            } else {
-                baseCost = 500;
-            }
-
-        double cost = baseCost * (isNight ? 0.8 : 1.0);
-        System.out.println("Стоимость: " + cost);
-
+        average = (double) total / 5;
+        System.out.println("Общий вес 5 палет: " + total);
+        System.out.println("Средний вес 5 палет: " + average);
 
     }
 }
