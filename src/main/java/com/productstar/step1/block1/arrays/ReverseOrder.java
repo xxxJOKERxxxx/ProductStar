@@ -12,9 +12,7 @@ public class ReverseOrder {
 
         double sum = 0;
 
-        double averageWeight = 0;
-
-        int count = 0;
+        double averageWeight;
 
         for (int i = 0; i < 5; i++) {
 
@@ -28,7 +26,7 @@ public class ReverseOrder {
 
         System.out.println();
 
-        averageWeight = (double) sum / 5;
+        averageWeight = sum / 5;
 
         System.out.print("Средний вес равен: " + averageWeight + " кг");
         System.out.println();
