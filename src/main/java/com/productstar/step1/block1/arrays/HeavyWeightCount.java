@@ -6,19 +6,14 @@ public class HeavyWeightCount {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int[] weight = new int[5];
-        boolean first = true;
-
+        int count = 0;
+        System.out.println("Введите вес палеты: ");
         for (int i = 0; i < 5; i++) {
             weight[i] = scanner.nextInt();
-        }
-
-        for (int i = 0; i < 5; i++) {
-            if (!first) {
-                System.out.print(", ");
+            if (weight[i] > 50) {
+                count++;
             }
-            System.out.print(weight[i]);
-            first = false;
         }
-        System.out.println();
+        System.out.println("Тяжелых палет: " + count);
     }
 }
