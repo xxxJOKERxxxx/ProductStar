@@ -9,8 +9,8 @@ public class SumElements {
         int sum = 0;
         System.out.println("Введите 5 чисел: ");
         for (int i = 0; i < weight.length; i++) {
-            weight[i] = scanner.nextInt();
-            sum  += weight[i];
+            weight[i] =scanner.nextInt();
+            sum = weight[i] + sum;
         }
         System.out.println("Сумма всех элементов: " + sum);
     }
