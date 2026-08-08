@@ -21,6 +21,4 @@ public class SumMethodArray2 {
         return total;
     }
 
-
-
 }
