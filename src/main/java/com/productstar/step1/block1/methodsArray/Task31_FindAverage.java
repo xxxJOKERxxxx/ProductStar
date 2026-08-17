@@ -21,6 +21,7 @@ public class Task31_FindAverage {
 
         double average = findAverage(number);
         System.out.println("Среднее арифмитическоеЖ " + average);
+
     }
 
     public static double findAverage(int[] number) {
